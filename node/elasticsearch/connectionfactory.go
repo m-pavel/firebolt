@@ -2,7 +2,9 @@ package elasticsearch
 
 import (
 	"context"
+	"crypto/tls"
 	"fmt"
+	"net/http"
 	"sync"
 	"sync/atomic"
 
@@ -72,8 +74,15 @@ func (e *esBulkServiceFactory) reconnect(ctx context.Context) {
 	e.connectLock.Lock()
 	defer e.connectLock.Unlock()
 
-	for true {
-		esClient, err := elastic.NewSimpleClient(elastic.SetURL(e.esURL), elastic.SetBasicAuth(e.esUsername, e.esPassword))
+	transport := &http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	}
+
+	httpClient := &http.Client{
+		Transport: transport,
+	}
+	for {
+		esClient, err := elastic.NewSimpleClient(elastic.SetURL(e.esURL), elastic.SetBasicAuth(e.esUsername, e.esPassword), elastic.SetHttpClient(httpClient))
 		if err == nil {
 			e.esClient = esClient
 			return
