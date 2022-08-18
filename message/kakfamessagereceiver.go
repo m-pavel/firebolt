@@ -5,14 +5,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/digitalocean/firebolt/testutil"
+	"github.com/m-pavel/firebolt/testutil"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/digitalocean/firebolt/config"
-	kafkainterface "github.com/digitalocean/firebolt/kafka"
-	"github.com/digitalocean/firebolt/util"
+	"github.com/m-pavel/firebolt/config"
+	kafkainterface "github.com/m-pavel/firebolt/kafka"
+	"github.com/m-pavel/firebolt/util"
 )
 
 // KafkaMessageReceiver consumes messages from the configured 'messagetopic'.

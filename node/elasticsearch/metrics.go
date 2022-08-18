@@ -3,7 +3,7 @@ package elasticsearch
 import (
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/digitalocean/firebolt/metrics"
+	"github.com/m-pavel/firebolt/metrics"
 )
 
 // Metrics encapsulates the prometheus metrics produced by the elasticsearch indexer.

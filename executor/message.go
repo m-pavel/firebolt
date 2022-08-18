@@ -6,10 +6,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/digitalocean/firebolt/config"
-	"github.com/digitalocean/firebolt/fbcontext"
-	"github.com/digitalocean/firebolt/message"
-	"github.com/digitalocean/firebolt/node"
+	"github.com/m-pavel/firebolt/config"
+	"github.com/m-pavel/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt/message"
+	"github.com/m-pavel/firebolt/node"
 )
 
 // InitMessaging should set up the configured messaging transport, and it MUST ensure that the executor's fbcontext is

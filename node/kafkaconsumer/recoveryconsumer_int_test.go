@@ -9,20 +9,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/digitalocean/firebolt/testutil"
+	"github.com/m-pavel/firebolt/testutil"
 
-	"github.com/digitalocean/firebolt"
+	"github.com/m-pavel/firebolt"
 
-	"github.com/digitalocean/firebolt/config"
-	"github.com/digitalocean/firebolt/message"
+	"github.com/m-pavel/firebolt/config"
+	"github.com/m-pavel/firebolt/message"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/digitalocean/firebolt/fbcontext"
-	"github.com/digitalocean/firebolt/metrics"
-	"github.com/digitalocean/firebolt/node/kafkaproducer"
+	"github.com/m-pavel/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt/metrics"
+	"github.com/m-pavel/firebolt/node/kafkaproducer"
 )
 
 // kafkaconsumer should sync its partition assignments to the recoveryconsumer (if enabled)

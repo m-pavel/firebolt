@@ -8,10 +8,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/fbcontext"
-	kafkainterface "github.com/digitalocean/firebolt/kafka"
-	"github.com/digitalocean/firebolt/metrics"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/fbcontext"
+	kafkainterface "github.com/m-pavel/firebolt/kafka"
+	"github.com/m-pavel/firebolt/metrics"
 )
 
 func createRecoveryConsumerConfig() map[string]string {

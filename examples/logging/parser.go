@@ -3,10 +3,10 @@ package logging
 import (
 	"errors"
 
+	"github.com/m-pavel/firebolt"
 	"github.com/digitalocean/captainslog"
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/fbcontext"
-	"github.com/digitalocean/firebolt/node"
+	"github.com/m-pavel/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt/node"
 
 	log "github.com/sirupsen/logrus"
 )

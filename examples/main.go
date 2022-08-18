@@ -5,15 +5,15 @@ import (
 	"reflect"
 
 	"github.com/digitalocean/captainslog"
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/examples/kafkatokafka"
-	"github.com/digitalocean/firebolt/examples/logging"
-	"github.com/digitalocean/firebolt/examples/shared"
-	"github.com/digitalocean/firebolt/executor"
-	"github.com/digitalocean/firebolt/metrics"
-	"github.com/digitalocean/firebolt/node"
-	"github.com/digitalocean/firebolt/node/elasticsearch"
-	"github.com/digitalocean/firebolt/testutil"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/examples/kafkatokafka"
+	"github.com/m-pavel/firebolt/examples/logging"
+	"github.com/m-pavel/firebolt/examples/shared"
+	"github.com/m-pavel/firebolt/executor"
+	"github.com/m-pavel/firebolt/metrics"
+	"github.com/m-pavel/firebolt/node"
+	"github.com/m-pavel/firebolt/node/elasticsearch"
+	"github.com/m-pavel/firebolt/testutil"
 )
 
 // choose an example to run; see 'runKafkaToKafka()' or 'runLogging()' for the actual example code

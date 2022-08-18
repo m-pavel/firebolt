@@ -6,8 +6,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/fbcontext"
 )
 
 // IndexRequest is the event payload type to use when passing data to the elasticsearch node.

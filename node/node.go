@@ -6,9 +6,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/fbcontext"
-	"github.com/digitalocean/firebolt/metrics"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt/metrics"
 )
 
 // Node is a single unit of processing; a tree of Nodes comprise all event processing in a user application.

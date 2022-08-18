@@ -10,8 +10,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"
 
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/node"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/node"
 )
 
 // Config is the firebolt application configuration, including the configured source and all processing nodes

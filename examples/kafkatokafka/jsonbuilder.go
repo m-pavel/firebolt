@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/digitalocean/firebolt/node"
-
 	"github.com/digitalocean/captainslog"
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/node"
+
+	"github.com/m-pavel/firebolt/fbcontext"
 )
 
 type jsonLog struct {

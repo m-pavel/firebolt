@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/digitalocean/firebolt/testutil"
-
-	"github.com/digitalocean/firebolt/node/elasticsearch"
-
-	"github.com/digitalocean/firebolt/node"
-
 	"github.com/digitalocean/captainslog"
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/testutil"
+
+	"github.com/m-pavel/firebolt/node/elasticsearch"
+
+	"github.com/m-pavel/firebolt/node"
+
+	"github.com/m-pavel/firebolt/fbcontext"
 )
 
 type jsonLogProgramNumeric struct {

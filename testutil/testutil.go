@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/digitalocean/firebolt/util"
+	"github.com/m-pavel/firebolt/util"
 )
 
 // AwaitCondition runs the passed 'cond' function every period until it returns true, returning an error if maxWait is

@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/digitalocean/firebolt/fbcontext"
-	"github.com/digitalocean/firebolt/metrics"
+	"github.com/m-pavel/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt/metrics"
 )
 
 func expectedMsgMatcher(_ fbcontext.Message) bool { // confirm that an expected message is sent

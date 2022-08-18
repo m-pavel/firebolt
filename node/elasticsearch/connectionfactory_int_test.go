@@ -7,7 +7,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/digitalocean/firebolt/metrics"
+	"github.com/m-pavel/firebolt/metrics"
 
 	"github.com/stretchr/testify/assert"
 )

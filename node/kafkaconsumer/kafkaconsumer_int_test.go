@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/digitalocean/firebolt/testutil"
+	"github.com/m-pavel/firebolt/testutil"
 
-	"github.com/digitalocean/firebolt"
+	"github.com/m-pavel/firebolt"
 
-	"github.com/digitalocean/firebolt/metrics"
+	"github.com/m-pavel/firebolt/metrics"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/digitalocean/firebolt/node/kafkaproducer"
+	"github.com/m-pavel/firebolt/node/kafkaproducer"
 )
 
 func TestKafkaConsumer(t *testing.T) {

@@ -8,17 +8,17 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/digitalocean/firebolt"
+	"github.com/m-pavel/firebolt"
 
-	"github.com/digitalocean/firebolt/util"
+	"github.com/m-pavel/firebolt/util"
 
-	"github.com/digitalocean/firebolt/leader"
+	"github.com/m-pavel/firebolt/leader"
 
-	"github.com/digitalocean/firebolt/config"
-	"github.com/digitalocean/firebolt/fbcontext"
-	"github.com/digitalocean/firebolt/message"
-	"github.com/digitalocean/firebolt/metrics"
-	"github.com/digitalocean/firebolt/node"
+	"github.com/m-pavel/firebolt/config"
+	"github.com/m-pavel/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt/message"
+	"github.com/m-pavel/firebolt/metrics"
+	"github.com/m-pavel/firebolt/node"
 
 	log "github.com/sirupsen/logrus"
 )

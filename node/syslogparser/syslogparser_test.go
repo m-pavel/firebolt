@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/digitalocean/firebolt"
-
 	"github.com/digitalocean/captainslog"
+	"github.com/m-pavel/firebolt"
+
 	"github.com/stretchr/testify/assert"
 )
 

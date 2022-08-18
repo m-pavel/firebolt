@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/digitalocean/firebolt/testutil"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/testutil"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/node/kafkaconsumer"
+	"github.com/m-pavel/firebolt/node/kafkaconsumer"
 )
 
 // ProduceTestData generates syslog entries onto the test topic.

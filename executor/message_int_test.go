@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/digitalocean/firebolt/testutil"
+	"github.com/m-pavel/firebolt/testutil"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/digitalocean/firebolt/config"
-	"github.com/digitalocean/firebolt/executor"
-	"github.com/digitalocean/firebolt/fbcontext"
-	"github.com/digitalocean/firebolt/internal"
-	"github.com/digitalocean/firebolt/message"
+	"github.com/m-pavel/firebolt/config"
+	"github.com/m-pavel/firebolt/executor"
+	"github.com/m-pavel/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt/internal"
+	"github.com/m-pavel/firebolt/message"
 )
 
 func sendMessageViaNode(ex *executor.Executor, messageType string, key string, payload string) {

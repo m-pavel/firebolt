@@ -9,14 +9,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/digitalocean/firebolt/testutil"
+	"github.com/m-pavel/firebolt/testutil"
 
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/executor"
-	"github.com/digitalocean/firebolt/internal"
-	"github.com/digitalocean/firebolt/node/kafkaconsumer"
-	"github.com/digitalocean/firebolt/node/kafkaproducer"
-	"github.com/digitalocean/firebolt/util"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/executor"
+	"github.com/m-pavel/firebolt/internal"
+	"github.com/m-pavel/firebolt/node/kafkaconsumer"
+	"github.com/m-pavel/firebolt/node/kafkaproducer"
+	"github.com/m-pavel/firebolt/util"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"

@@ -3,7 +3,8 @@ package config_test
 import (
 	"testing"
 
-	"github.com/digitalocean/firebolt/node/kafkaproducer"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/node/kafkaproducer"
 
 	"strings"
 
@@ -13,11 +14,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/config"
-	"github.com/digitalocean/firebolt/node"
-	"github.com/digitalocean/firebolt/node/kafkaconsumer"
-	"github.com/digitalocean/firebolt/node/syslogparser"
+	"github.com/m-pavel/firebolt/config"
+	"github.com/m-pavel/firebolt/node"
+	"github.com/m-pavel/firebolt/node/kafkaconsumer"
+	"github.com/m-pavel/firebolt/node/syslogparser"
 )
 
 func TestParseConfig(t *testing.T) {

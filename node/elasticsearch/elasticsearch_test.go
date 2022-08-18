@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/fbcontext"
-	"github.com/digitalocean/firebolt/metrics"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/fbcontext"
+	"github.com/m-pavel/firebolt/metrics"
 
 	elastic "github.com/olivere/elastic/v7"
 	"github.com/stretchr/testify/assert"

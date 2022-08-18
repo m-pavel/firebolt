@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/digitalocean/firebolt/executor"
-	"github.com/digitalocean/firebolt/internal"
+	"github.com/m-pavel/firebolt/executor"
+	"github.com/m-pavel/firebolt/internal"
 )
 
 func TestNewInvalidConfig(t *testing.T) {

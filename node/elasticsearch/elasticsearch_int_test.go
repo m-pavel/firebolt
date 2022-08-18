@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/digitalocean/firebolt/testutil"
+	"github.com/m-pavel/firebolt/testutil"
 
 	"github.com/olivere/elastic/v7"
 
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/metrics"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/metrics"
 	"github.com/stretchr/testify/assert"
 )
 

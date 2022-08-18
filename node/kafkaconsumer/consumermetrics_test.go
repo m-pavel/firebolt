@@ -3,11 +3,11 @@ package kafkaconsumer
 import (
 	"testing"
 
-	"github.com/digitalocean/firebolt/util"
+	"github.com/m-pavel/firebolt/util"
 
 	"github.com/stretchr/testify/assert"
 
-	metrics2 "github.com/digitalocean/firebolt/metrics"
+	metrics2 "github.com/m-pavel/firebolt/metrics"
 )
 
 func TestParseStats(t *testing.T) {

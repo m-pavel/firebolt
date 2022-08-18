@@ -3,13 +3,13 @@ package executor
 import (
 	"reflect"
 
-	"github.com/digitalocean/firebolt/node/elasticsearch"
+	"github.com/m-pavel/firebolt"
+	"github.com/m-pavel/firebolt/node/elasticsearch"
 
-	"github.com/digitalocean/firebolt"
-	"github.com/digitalocean/firebolt/node"
-	"github.com/digitalocean/firebolt/node/kafkaconsumer"
-	"github.com/digitalocean/firebolt/node/kafkaproducer"
-	"github.com/digitalocean/firebolt/node/syslogparser"
+	"github.com/m-pavel/firebolt/node"
+	"github.com/m-pavel/firebolt/node/kafkaconsumer"
+	"github.com/m-pavel/firebolt/node/kafkaproducer"
+	"github.com/m-pavel/firebolt/node/syslogparser"
 )
 
 // RegisterBuiltinSourceTypes initializes the node registry with all built-in source types
