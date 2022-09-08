@@ -121,6 +121,18 @@ func (k *KafkaConsumer) buildConfigMap(config map[string]string) (*kafka.ConfigM
 		"socket.keepalive.enable":         true,
 		"log.connection.close":            false,
 	}
+	if v, ok := config["sasl.mechanisms"]; ok {
+		configMap.SetKey("sasl.mechanisms", v)
+	}
+	if v, ok := config["security.protocol"]; ok {
+		configMap.SetKey("security.protocol", v)
+	}
+	if v, ok := config["sasl.username"]; ok {
+		configMap.SetKey("sasl.username", v)
+	}
+	if v, ok := config["sasl.password"]; ok {
+		configMap.SetKey("sasl.password", v)
+	}
 
 	err = util.ApplyLibrdkafkaConf(config, configMap)
 	if err != nil {
