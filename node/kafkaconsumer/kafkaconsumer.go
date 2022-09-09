@@ -133,6 +133,7 @@ func (k *KafkaConsumer) buildConfigMap(config map[string]string) (*kafka.ConfigM
 	if v, ok := config["sasl.password"]; ok {
 		configMap.SetKey("sasl.password", v)
 	}
+	configMap.SetKey("ssl.enable_verify", "false")
 
 	err = util.ApplyLibrdkafkaConf(config, configMap)
 	if err != nil {
