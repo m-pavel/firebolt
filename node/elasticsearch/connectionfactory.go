@@ -4,7 +4,9 @@ import (
 	"context"
 	"crypto/tls"
 	"fmt"
+	"math/rand"
 	"net/http"
+	"strings"
 	"sync"
 	"sync/atomic"
 
@@ -27,7 +29,7 @@ type bulkServiceFactory interface {
 type esBulkServiceFactory struct {
 	ctx              context.Context
 	connectLock      sync.RWMutex
-	esURL            string
+	esURL            []string
 	esUsername       string
 	esPassword       string
 	esClient         *elastic.Client
@@ -41,7 +43,7 @@ func newEsBulkServiceFactory(ctx context.Context, url string, esUsername string,
 	factory := &esBulkServiceFactory{
 		ctx:              ctx,
 		connectLock:      sync.RWMutex{},
-		esURL:            url,
+		esURL:            strings.Split(url, ","),
 		esUsername:       esUsername,
 		esPassword:       esPassword,
 		reconnectBatches: int64(reconnectBatches),
@@ -82,7 +84,9 @@ func (e *esBulkServiceFactory) reconnect(ctx context.Context) {
 		Transport: transport,
 	}
 	for {
-		esClient, err := elastic.NewSimpleClient(elastic.SetURL(e.esURL), elastic.SetBasicAuth(e.esUsername, e.esPassword), elastic.SetHttpClient(httpClient))
+		tUrl := strings.TrimSpace(e.esURL[rand.Intn(len(e.esURL))])
+		log.Infof("Reconnecting to %s", tUrl)
+		esClient, err := elastic.NewSimpleClient(elastic.SetURL(tUrl), elastic.SetBasicAuth(e.esUsername, e.esPassword), elastic.SetHttpClient(httpClient))
 		if err == nil {
 			e.esClient = esClient
 			return
